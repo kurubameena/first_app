@@ -11,3 +11,4 @@ Hello world
 heloo java
 
 public--> access modifier static--->static member void-->return
+String agrgs--->string argument will pass
