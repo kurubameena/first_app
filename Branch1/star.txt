@@ -12,3 +12,6 @@ int i,j;
 		System.out.println('\n');
 }
 };
+
+
+Output:
