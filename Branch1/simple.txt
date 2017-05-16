@@ -12,4 +12,4 @@ heloo java
 
 public--> access modifier static--->static member void-->return
 String agrgs--->string argument will pass
-System---CLass of java package
+System---CLass of java.lang. package 
