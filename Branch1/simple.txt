@@ -10,3 +10,4 @@ output
 Hello world
 heloo java
 
+public--> access modifier static--->static member void-->return
