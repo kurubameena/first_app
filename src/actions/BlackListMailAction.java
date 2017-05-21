@@ -61,4 +61,6 @@ public class BlackListMailAction extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher(path);
 		rd.forward(request, response);
 	}
+system.out.print("/n")
+}
 }
