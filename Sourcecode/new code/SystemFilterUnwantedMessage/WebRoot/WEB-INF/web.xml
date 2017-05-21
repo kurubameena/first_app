@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.socialnet.actions.LoginAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AbstractDataAccessObject</servlet-name>
+    <servlet-class>com.socialnet.conections.AbstractDataAccessObject</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>com.socialnet.util.InitServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/config/system.properties</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MasterDao</servlet-name>
+    <servlet-class>com.socialnet.dao.MasterDao</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangePassword</servlet-name>
+    <servlet-class>com.socialnet.actions.ChangePassword</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditProfileAction</servlet-name>
+    <servlet-class>com.socialnet.actions.EditProfileAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DateWrapper</servlet-name>
+    <servlet-class>com.socialnet.util.DateWrapper</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ProfileUpdateAction</servlet-name>
+    <servlet-class>com.socialnet.actions.ProfileUpdateAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangePasswordDispatch</servlet-name>
+    <servlet-class>com.mspot.ActionDispatch.ChangePasswordDispatch</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewAccountsDispatch</servlet-name>
+    <servlet-class>com.mspot.ActionDispatch.ViewAccountsDispatch</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditProfileDispatch</servlet-name>
+    <servlet-class>com.mspot.ActionDispatch.EditProfileDispatch</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddAdminDispatch</servlet-name>
+    <servlet-class>com.mspot.ActionDispatch.AddAdminDispatch</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddAdminAction</servlet-name>
+    <servlet-class>com.socialnet.actions.AddAdminAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewAccountsAction</servlet-name>
+    <servlet-class>com.socialnet.actions.ViewAccountsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LockingAction</servlet-name>
+    <servlet-class>com.socialnet.actions.LockingAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpadateProfile</servlet-name>
+    <servlet-class>com.socialnet.actions.UpadateProfile</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LogoutAction</servlet-name>
+    <servlet-class>com.socialnet.actions.LogoutAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterAction</servlet-name>
+    <servlet-class>com.socialnet.actions.RegisterAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserDAO</servlet-name>
+    <servlet-class>com.socialnet.dao.UserDAO</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateContactDetails</servlet-name>
+    <servlet-class>com.socialnet.actions.UpdateContactDetails</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdatePersonalDetailsAction</servlet-name>
+    <servlet-class>com.socialnet.actions.UpdatePersonalDetailsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateProfessionalDetails</servlet-name>
+    <servlet-class>com.socialnet.actions.UpdateProfessionalDetails</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateSocialDetails</servlet-name>
+    <servlet-class>com.socialnet.actions.UpdateSocialDetails</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddFriendAction</servlet-name>
+    <servlet-class>com.socialnet.actions.AddFriendAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostCommentAction</servlet-name>
+    <servlet-class>com.socialnet.actions.PostCommentAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UnLockingAction</servlet-name>
+    <servlet-class>com.socialnet.actions.UnLockingAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostNewSawal</servlet-name>
+    <servlet-class>com.socialnet.actions.PostNewSawal</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostPollComentAction</servlet-name>
+    <servlet-class>com.socialnet.actions.PostPollComentAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostNewPoll</servlet-name>
+    <servlet-class>com.socialnet.actions.PostNewPoll</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckUserAction</servlet-name>
+    <servlet-class>com.socialnet.actions.CheckUserAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RequestFriend</servlet-name>
+    <servlet-class>com.socialnet.actions.RequestFriend</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RejectFriendAction</servlet-name>
+    <servlet-class>com.socialnet.actions.RejectFriendAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangePermissionAction</servlet-name>
+    <servlet-class>com.socialnet.actions.ChangePermissionAction</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetPhotosAction</servlet-name>
+    <servlet-class>com.socialnet.user.actions.GetPhotosAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangePickAction</servlet-name>
+    <servlet-class>com.socialnet.actions.ChangePickAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PasswordRecoveryAction</servlet-name>
+    <servlet-class>com.socialnet.actions.PasswordRecoveryAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <servlet-class>com.socialnet.actions.ChangePasswordAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangeNewPassword</servlet-name>
+    <servlet-class>com.socialnet.actions.ChangeNewPassword</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangeAdminPickAction</servlet-name>
+    <servlet-class>com.socialnet.actions.ChangeAdminPickAction</servlet-class>
+  </servlet>
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostScrapAction</servlet-name>
+    <servlet-class>com.socialnet.actions.PostScrapAction</servlet-class>
+  </servlet>
+
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteScrapAction</servlet-name>
+    <servlet-class>com.socialnet.actions.DeleteScrapAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InsertPickAction</servlet-name>
+    <servlet-class>com.socialnet.actions.InsertPickAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckAdminAction</servlet-name>
+    <servlet-class>com.socialnet.actions.CheckAdminAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeletePickAction</servlet-name>
+    <servlet-class>com.socialnet.actions.DeletePickAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddServiceScoreAction</servlet-name>
+    <servlet-class>com.socialnet.actions.AddServiceScoreAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddUserPhotosAction</servlet-name>
+    <servlet-class>com.socialnet.actions.AddUserPhotosAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangePassword1</servlet-name>
+    <servlet-class>com.socialnet.actions.ChangePassword</servlet-class>
+  </servlet>
+
+
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ComposeAppMailAction</servlet-name>
+    <servlet-class>com.socialnet.actions.ComposeAppMailAction</servlet-class>
+  </servlet>
+  
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OutboxAction</servlet-name>
+    <servlet-class>com.socialnet.actions.OutboxAction</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SendMailAction</servlet-name>
+    <servlet-class>com.socialnet.actions.SendMailAction</servlet-class>
+  </servlet>
+
+
+
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewMailAttachmentAction</servlet-name>
+    <servlet-class>com.socialnet.actions.ViewMailAttachmentAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewMailBody</servlet-name>
+    <servlet-class>com.socialnet.actions.ViewMailBody</servlet-class>
+  </servlet>
+ 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddWordAction</servlet-name>
+    <servlet-class>com.socialnet.actions.AddWordAction</servlet-class>
+  </servlet>
+
+ 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FilterMailAction</servlet-name>
+    <servlet-class>com.socialnet.actions.FilterMailAction</servlet-class>
+  </servlet>
+
+
+
+
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FilterSendMailAction</servlet-name>
+    <servlet-class>com.socialnet.actions.FilterSendMailAction</servlet-class>
+  </servlet>
+
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FilterOutboxAction</servlet-name>
+    <servlet-class>com.socialnet.actions.FilterOutboxAction</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteMailsAction</servlet-name>
+    <servlet-class>com.socialnet.actions.DeleteMailsAction</servlet-class>
+  </servlet>
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewFIlterMailBody</servlet-name>
+    <servlet-class>com.socialnet.actions.ViewFIlterMailBody</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BlackListMailAction</servlet-name>
+    <servlet-class>com.socialnet.actions.BlackListMailAction</servlet-class>
+  </servlet>
+
+
+    <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteMailAction</servlet-name>
+    <servlet-class>com.socialnet.actions.DeleteMailAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserDeleteAction</servlet-name>
+    <servlet-class>com.socialnet.actions.UserDeleteAction</servlet-class>
+  </servlet>
+
+
+
+
+
+ <servlet-mapping>
+    <servlet-name>DeleteMailAction</servlet-name>
+    <url-pattern>/DeleteMailAction</url-pattern>
+  </servlet-mapping>
+
+   <servlet-mapping>
+    <servlet-name>BlackListMailAction</servlet-name>
+    <url-pattern>/BlackListMailAction</url-pattern>
+  </servlet-mapping>
+
+   <servlet-mapping>
+    <servlet-name>ViewFIlterMailBody</servlet-name>
+    <url-pattern>/ViewFIlterMailBody</url-pattern>
+  </servlet-mapping>
+
+
+   <servlet-mapping>
+    <servlet-name>DeleteMailsAction</servlet-name>
+    <url-pattern>/DeleteMailsAction</url-pattern>
+  </servlet-mapping>
+
+ <servlet-mapping>
+    <servlet-name>FilterOutboxAction</servlet-name>
+    <url-pattern>/FilterOutboxAction</url-pattern>
+  </servlet-mapping>
+
+
+   <servlet-mapping>
+    <servlet-name>FilterSendMailAction</servlet-name>
+    <url-pattern>/FilterSendMailAction</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>FilterMailAction</servlet-name>
+    <url-pattern>/FilterMailAction</url-pattern>
+  </servlet-mapping>
+
+
+ <servlet-mapping>
+    <servlet-name>AddWordAction</servlet-name>
+    <url-pattern>/AddWordAction</url-pattern>
+  </servlet-mapping>
+
+   <servlet-mapping>
+    <servlet-name>ViewMailAttachmentAction</servlet-name>
+    <url-pattern>/ViewMailAttachmentAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ViewMailBody</servlet-name>
+    <url-pattern>/ViewMailBody</url-pattern>
+  </servlet-mapping>
+
+
+<servlet-mapping>
+    <servlet-name>SendMailAction</servlet-name>
+    <url-pattern>/SendMailAction</url-pattern>
+  </servlet-mapping>
+
+ <servlet-mapping>
+    <servlet-name>OutboxAction</servlet-name>
+    <url-pattern>/OutboxAction</url-pattern>
+  </servlet-mapping>
+
+<servlet-mapping>
+    <servlet-name>ComposeAppMailAction</servlet-name>
+    <url-pattern>/ComposeAppMailAction</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/LoginAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AbstractDataAccessObject</servlet-name>
+    <url-pattern>/AbstractDataAccessObject</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/InitServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>MasterDao</servlet-name>
+    <url-pattern>/MasterDao</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePassword</servlet-name>
+    <url-pattern>/ChangePassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditProfileAction</servlet-name>
+    <url-pattern>/EditProfileAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DateWrapper</servlet-name>
+    <url-pattern>/DateWrapper</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProfileUpdateAction</servlet-name>
+    <url-pattern>/ProfileUpdateAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePasswordDispatch</servlet-name>
+    <url-pattern>/ChangePasswordDispatch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewAccountsDispatch</servlet-name>
+    <url-pattern>/ViewAccountsDispatch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditProfileDispatch</servlet-name>
+    <url-pattern>/EditProfileDispatch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddAdminDispatch</servlet-name>
+    <url-pattern>/AddAdminDispatch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddAdminAction</servlet-name>
+    <url-pattern>/AddAdminAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewAccountsAction</servlet-name>
+    <url-pattern>/ViewAccountsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LockingAction</servlet-name>
+    <url-pattern>/LockingAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpadateProfile</servlet-name>
+    <url-pattern>/UpadateProfile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutAction</servlet-name>
+    <url-pattern>/LogoutAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterAction</servlet-name>
+    <url-pattern>/RegisterAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserDAO</servlet-name>
+    <url-pattern>/UserDAO</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateContactDetails</servlet-name>
+    <url-pattern>/UpdateContactDetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePersonalDetailsAction</servlet-name>
+    <url-pattern>/UpdatePersonalDetailsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateProfessionalDetails</servlet-name>
+    <url-pattern>/UpdateProfessionalDetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateSocialDetails</servlet-name>
+    <url-pattern>/UpdateSocialDetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddFriendAction</servlet-name>
+    <url-pattern>/AddFriendAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostCommentAction</servlet-name>
+    <url-pattern>/PostCommentAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UnLockingAction</servlet-name>
+    <url-pattern>/UnLockingAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostNewSawal</servlet-name>
+    <url-pattern>/PostNewSawal</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostPollComentAction</servlet-name>
+    <url-pattern>/PostPollComentAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostNewPoll</servlet-name>
+    <url-pattern>/PostNewPoll</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckUserAction</servlet-name>
+    <url-pattern>/CheckUserAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestFriend</servlet-name>
+    <url-pattern>/RequestFriend</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RejectFriendAction</servlet-name>
+    <url-pattern>/RejectFriendAction</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>ChangePermissionAction</servlet-name>
+    <url-pattern>/ChangePermissionAction</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>GetPhotosAction</servlet-name>
+    <url-pattern>/GetPhotosAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePickAction</servlet-name>
+    <url-pattern>/ChangePickAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostScrapAction</servlet-name>
+    <url-pattern>/PostScrapAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>DeleteScrapAction</servlet-name>
+    <url-pattern>/DeleteScrapAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>PasswordRecoveryAction</servlet-name>
+    <url-pattern>/PasswordRecoveryAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <url-pattern>/ChangePasswordAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeNewPassword</servlet-name>
+    <url-pattern>/ChangeNewPassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeAdminPickAction</servlet-name>
+    <url-pattern>/ChangeAdminPickAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertPickAction</servlet-name>
+    <url-pattern>/InsertPickAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckAdminAction</servlet-name>
+    <url-pattern>/CheckAdminAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeletePickAction</servlet-name>
+    <url-pattern>/DeletePickAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddServiceScoreAction</servlet-name>
+    <url-pattern>/AddServiceScoreAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUserPhotosAction</servlet-name>
+    <url-pattern>/AddUserPhotosAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePassword1</servlet-name>
+    <url-pattern>/ChangePassword1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserDeleteAction</servlet-name>
+    <url-pattern>/UserDeleteAction</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
