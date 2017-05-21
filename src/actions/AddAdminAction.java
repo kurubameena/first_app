@@ -81,5 +81,8 @@ public class AddAdminAction extends HttpServlet {
 	public void init() throws ServletException {
 		// Put your code here
 	}
-
+System.out.println('/n')
+}
+{
+system.out.printls("print")
 }
