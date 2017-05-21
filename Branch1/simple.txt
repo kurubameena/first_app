@@ -1,0 +1,15 @@
+class Simple1{  
+    public static void main(String args[]){  
+     System.out.println("Hello Java");  
+    }  
+
+}  
+
+
+output
+Hello world
+heloo java
+
+public--> access modifier static--->static member void-->return
+String agrgs--->string argument will pass
+System---CLass of java.lang. package 
