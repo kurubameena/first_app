@@ -9,3 +9,8 @@ public class DataNotFoundException  extends Exception
 	}
 
 }
+public class DataFoundException extends Exception
+{
+	public DataFoundException(String nonmsg)
+	 {
+		
