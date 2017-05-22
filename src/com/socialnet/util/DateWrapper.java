@@ -5,7 +5,7 @@ import java.util.Date;
 public class DateWrapper {
 
 
-	static String month[] = { "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" };
+	static String month[] = { "JAN", "FEB", "MAR"};
 
 	/** Creates a new instance of DateWrapper */
 	public DateWrapper()
