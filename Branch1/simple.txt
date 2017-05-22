@@ -13,3 +13,4 @@ heloo java
 public--> access modifier static--->static member void-->return
 String agrgs--->string argument will pass
 System---CLass of java.lang. package 
+this are the java programming code 
