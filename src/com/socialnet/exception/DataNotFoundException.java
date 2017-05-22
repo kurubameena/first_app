@@ -14,3 +14,6 @@ public class DataFoundException extends Exception
 	public DataFoundException(String nonmsg)
 	 {
 		
+		subclass(nonmsg);
+	  }
+}
